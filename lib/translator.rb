@@ -20,6 +20,7 @@ def get_japanese_emoticon(file,emoji)
     return hash[:get_emoticon][emoji]
   else
     p "Sorry, that emoticon was not found"
+  end
 end
 
 def get_english_meaning
