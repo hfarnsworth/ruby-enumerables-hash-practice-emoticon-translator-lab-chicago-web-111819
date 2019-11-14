@@ -4,7 +4,7 @@ require "yaml"
 def load_library(file)
   pp data_hash = YAML.load_file(file)
   
-  data_hash.map { |k,v| [:get_meaning=> {v[1]=> k }, :get_emoticon=> {v[0]=> v[1] }] }
+  data_hash.map { |k,v| [:get_meaning=> {v[1]=> k }, :get_emoticon=> {v[0]=> v[1] }] }.to
 end
 
 def get_japanese_emoticon
