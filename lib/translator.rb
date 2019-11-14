@@ -5,7 +5,7 @@ def load_library(file)
   pp data_hash = YAML.load_file(file)
   
   pp get_meaning = data_hash.map { |k,v| [v[1], k ] }.to_h
-  get_emotion = dat_hash.map { |k,v| [v[0], v[1] ] }.to_h
+  pp get_emotion = dat_hash.map { |k,v| [v[0], v[1] ] }.to_h
   
   new_data = Hash.new
   
