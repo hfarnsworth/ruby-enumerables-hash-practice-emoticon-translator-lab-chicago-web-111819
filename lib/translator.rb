@@ -2,7 +2,9 @@
 require "yaml"
 
 def load_library(file)
-  pp YAML.load_file(file).map
+  pp YAML.load_file(file).map {
+    |k,v| v
+  }
   
 end
 
