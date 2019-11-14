@@ -15,7 +15,7 @@ def load_library(file)
 end
 
 def get_japanese_emoticon(file,emoji)
-  load_library(file).
+  load_library(file)[:get_meaning][emoji]
 end
 
 def get_english_meaning
