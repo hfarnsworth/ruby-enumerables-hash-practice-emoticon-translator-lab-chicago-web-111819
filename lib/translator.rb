@@ -14,15 +14,20 @@ def load_library(file)
   new_data
 end
 
-def get_japanese_emoticon(file,emoji)
+def get_japanese_emoticon(file,amerimoji)
   hash = load_library(file)
-  if hash[:get_emoticon][emoji]
-    return hash[:get_emoticon][emoji]
+  if hash[:get_emoticon][amerimoji]
+    return hash[:get_emoticon][amerimoji]
   else
-    p "Sorry, that emoticon was not found"
+    return "Sorry, that emoticon was not found"
   end
 end
 
-def get_english_meaning
-  # code goes here
+def get_english_meaning(file,emoji)
+  hash = load_library(file)
+  if hash[:get_meaning][emoji]
+    return hash[:get_meaning][emoji]
+  else
+    return "Sorry, that emoticon was not found"
+  end
 end
