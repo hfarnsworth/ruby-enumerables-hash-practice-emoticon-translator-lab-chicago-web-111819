@@ -3,7 +3,7 @@ require "yaml"
 
 def load_library(file)
   pp YAML.load_file(file).map {
-    |k,v| [:get_meaning=> (v[1]=> k ), :get_emoticon=> ()];
+    |k,v| [:get_meaning=> (v[1]=> k ), :get_emoticon=> (v[0]=> v[1] )];
     
   }
   
