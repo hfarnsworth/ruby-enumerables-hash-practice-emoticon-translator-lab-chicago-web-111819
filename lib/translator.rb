@@ -1,5 +1,4 @@
 # require modules here
-require emoticons.yml
 
 def load_library(file)
   pp load file
