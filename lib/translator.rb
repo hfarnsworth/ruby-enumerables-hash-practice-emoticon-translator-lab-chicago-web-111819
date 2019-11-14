@@ -6,7 +6,7 @@ def load_library(file)
   
   get_meaning = data_hash.map { |k,v| [v[1], k ] }.to_h
   
-  get_emoticon
+  get_meaning
 end
 
 def get_japanese_emoticon
