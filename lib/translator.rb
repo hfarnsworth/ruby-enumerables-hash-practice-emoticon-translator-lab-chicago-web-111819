@@ -16,7 +16,10 @@ end
 
 def get_japanese_emoticon(file,emoji)
   hash = load_library(file)
-  hash[:get_emoticon][emoji]
+  if hash[:get_emoticon][emoji]
+    return
+  else
+    p 
 end
 
 def get_english_meaning
