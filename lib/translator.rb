@@ -2,7 +2,6 @@
 
 def load_library(file)
   new_hash = Hash.new
-  pp new_hash = load file
 end
 
 def get_japanese_emoticon
